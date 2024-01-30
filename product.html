@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+     <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+  
+  <!--bootstrap-->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!--font awesome-->
+  
+  <script src="https://kit.fontawesome.com/d9b74fd5cf.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="CSS/product.css">
+  
+</head>
+<body>
+ <!-- Nav Bar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CareXpress</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+ 
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">cart</a>
+
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<section id="pricing">
+    <h2>Best Selling Products</h2>
+    <p>Simple and affordable prices and up to 50% off on selected medicines.</p>
+
+    <div class="row">
+        
+        <div class="pricing-col col-lg-4 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Diapers</h3>
+                    <img src="Images/diapers.jpg" alt="Diapers">
+                </div>
+                <div class="card-body">
+                    <h2 class="h2-pricing">Rs.699/-</h2>
+                    <p>5 Diapers Per Packet</p>
+                    <p>Available for both adult and child</p>
+                    <button class="btn btn-lg btn-block btn-dark" type="button"
+                            onclick="addToCart('Diapers', 699, 'Images/diapers.jpg')">Add to Cart
+                    </button>
+                    <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: Soframycin -->
+        <div class="pricing-col col-lg-4 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Soframycin</h3>
+                    <img src="Images/soframycin.jpg" alt="Soframycin">
+                </div>
+                <div class="card-body">
+                    <h2 class="h2-pricing">Rs.99/-</h2>
+                    <p>Antiseptic cream</p>
+                    <p>Prescribed by doctor</p>
+                    <button class="btn btn-lg btn-block btn-dark" type="button"
+                            onclick="addToCart('Soframycin', 99, 'Images/soframycin.jpg')">Add to Cart
+                    </button>
+                    <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="pricing-col col-lg-4 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Injection</h3>
+                    <img src="Images/Injection.jpg" alt="Injection">
+                </div>
+                <div class="card-body">
+                    <h2 class="h2-pricing">Rs.60/-</h2>
+                    <p>Use and throw</p>
+                    <p>Prescribed by doctor</p>
+                    <button class="btn btn-lg btn-block btn-dark" type="button"
+                            onclick="addToCart('Injection', 60, 'Images/Injection.jpg')">Add to Cart
+                    </button>
+                    <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-col col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h3>Gloves</h3>
+                <img src="Images/gloves.jpg" alt="Gloves">
+              </div>
+              <div class="card-body">
+                <h2 class="h2-pricing">Rs.299/-</h2>
+                <p>Use and throw</p>
+                <p>Universal Size</p>
+                <button class="btn btn-lg btn-block btn-dark" type="button" onclick="addToCart('Gloves', 299)">Add to Cart</button>
+                <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+              </div>
+            </div>  
+          </div>
+        
+        
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Bourn Vita</h3>
+            <img src="Images/bournvita.jpeg" alt="bournvita">
+            </div>
+            <div class="card-body">
+              <h2 class="h2-pricing">Rs.37/-</h2>
+              <p>Chocolate flavour</p>
+              <p>Increase stamina</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button" onclick="addToCart('bournvita', 37)">Add to Cart</button>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+            </div>
+         </div>
+        </div>
+        
+        <div class="pricing-col col-lg-4 col-md-12">
+         <div class="card">
+           <div class="card-header">
+             <h3>Calpol 650</h3>
+             <img src="Images/Calpol.jpeg" alt="Calpol">
+           </div>
+           <div class="card-body">
+             <h2 class="h2-pricing">Rs.99/-</h2>
+             <p>Paracetamol</p>
+             <p>Instant relief </p>
+             <button class="btn btn-lg btn-block btn-dark" type="button" onclick="addToCart('Calpol', 99)">Add to Cart</button>
+             <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+           </div>
+          </div>
+        </div>
+        
+        </div>
+        <div class="row">
+            
+          <div class="pricing-col col-lg-4 col-md-6">
+            <div class="card" >
+              <div class="card-header">  
+                <h3>Limcee 500</h3>
+                <img src="Images/limcee.jpeg" alt="Limcee">
+              </div>
+              <div class="card-body">
+                <h2 class="h2-pricing">Rs.25/-</h2>
+                <p>Orange flavour Vitamin c chewable tablet</p>
+                <p>Available for both adult and child</p>
+                <button class="btn btn-lg btn-block btn-dark" type="button">Add to Cart</button>
+                <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+              </div>
+            </div>  
+          </div>
+        
+        
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Seroflo 250</h3>
+              <img src="Images/Seroflow.jpeg" alt="Seroflo">
+            </div>
+            <div class="card-body">
+              <h2 class="h2-pricing">Rs.472/-</h2>
+              <p>Prescription required</p>
+              <p>Chronic obstructive pulmonary disease (COPD)</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Add to Cart</button>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+            </div>
+         </div>
+        </div>
+        
+        
+        
+        <div class="pricing-col col-lg-4 col-md-12">
+         <div class="card">
+           <div class="card-header">
+             <h3>Prolomet XL 25</h3>
+             <img src="Images/Prolomet.jpeg" alt="Prolomet">
+           </div>
+           <div class="card-body">
+             <h2 class="h2-pricing">Rs.87/-</h2>
+             <p>Use to treat High Blood Pressure</p>
+             <p>Prescription required</p>
+             <button class="btn btn-lg btn-block btn-dark" type="button">Add to Cart</button>
+             <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+           </div>
+          </div>
+        </div>
+        
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Wraf 5mg</h3>
+              <img src="Images/Warf.jpeg" alt="Wraf">
+            </div>
+            <div class="card-body">
+              <h2 class="h2-pricing">Rs. 80/-</h2>
+              <p>Use to regulate blood INR level</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Add to Cart</button>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+            </div>
+          </div>  
+        </div>
+        
+        
+        <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Zifi O</h3>
+            <img src="Images/zifi.jpeg" alt="zifi">
+          </div>
+          <div class="card-body">
+            <h2 class="h2-pricing">Rs.142/-</h2>
+            <p>Antibiotic tablet</p>
+            <p>Prescription required</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Add to Cart</button>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+          </div>
+        </div>
+        </div>
+        
+        <div class="pricing-col col-lg-4 col-md-12">
+        <div class="card">
+         <div class="card-header">
+           <h3>Grilinctus</h3>
+           <img src="Images/Grilinctus.jpeg" alt="Grilinctus">
+         </div>
+         <div class="card-body">
+           <h2 class="h2-pricing">Rs.119/-</h2>
+           <p>Cough Syrup</p>
+           <p>For dry Cough</p>
+           <button class="btn btn-lg btn-block btn-dark" type="button">Add to Cart</button>
+           <button class="btn btn-lg btn-block btn-dark" type="button">Buy Now</button>
+         </div>
+        </div>
+        </div>
+        </div>
+
+       
+        
+    </div>
+</section>
+
+<script>
+  // JavaScript code to handle adding products to cart in product.html
+
+  // Function to add a product to the cart
+  function addToCart(productName, productPrice, productImage) {
+      // Get the existing cart items from local storage or initialize an empty array
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      // Create a product object
+      const product = {
+          name: productName,
+          price: productPrice,
+          image: productImage,
+      };
+
+      // Add the product to the cart
+      cart.push(product);
+
+      // Save the updated cart back to local storage
+      localStorage.setItem("Css/cart", JSON.stringify(cart));
+
+      // Alert the user that the product has been added to the cart
+      alert(`${productName} added to cart.`);
+  }
+
+  // Add a click event listener to each "Add to Cart" button
+  const addToCartButtons = document.querySelectorAll(".btn-dark");
+  addToCartButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+          const productName = button.parentElement.querySelector("h3").textContent;
+          const productPrice = parseFloat(button.parentElement.querySelector(".h2-pricing").textContent.replace("Rs.", ""));
+          const productImage = button.parentElement.querySelector("img").getAttribute("src");
+
+          addToCart(productName, productPrice, productImage);
+      });
+  });
+</script>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+        .footer-logo img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer-social {
+            margin-top: 20px;
+        }
+        .footer-social a {
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .footer-social a:hover {
+            color: #009688;
+        }
+        .footer-sitemap {
+            margin-top: 20px;
+        }
+        .footer-sitemap a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .footer-sitemap a:hover {
+            color: #009688;
+        }
+        .footer-contact {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="Images/Carelogo.jpg" alt="Logo">
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-sitemap">
+                    <a href="index.html">Home</a>
+                    <a href="product.html">Products</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <div class="footer-contact">
+                    <p>Email:CareXpress@gmail.com</p>
+                    <p>Phone:+91 9028181245</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CareXpress. All rights reserved.</p>
+        </div>
+    </div>
+
+
+  </section>
+</body>
+</html>

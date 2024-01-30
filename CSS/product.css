@@ -1,0 +1,23 @@
+.navbar-nav{
+    margin-left: 450px;
+}
+
+li{
+    margin-left: 50px;
+}
+
+#pricing{
+    padding:100px ;
+    text-align: center;
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+.h2-pricing{
+    color: black;
+    font-size: 3rem;
+    font-family: "Montserrat";
+}
+
